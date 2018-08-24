@@ -1,0 +1,103 @@
+import { Split, FullScreenCode } from 'mdx-deck/layouts'
+import { Appear } from 'mdx-deck'
+
+export { code as theme } from 'mdx-deck/themes'
+
+# An Introduction to MDX-Deck
+
+---
+
+# What is MDX?
+
+---
+
+## JSX in Markdown
+
+https://mdxjs.com/
+
+---
+
+export default FullScreenCode
+
+```jsx
+import Accordian from '../components/Accordian'
+
+# Here's an Accordian
+
+It's rendered inside our MDX document.
+
+<Accordian />
+```
+---
+
+# What is MDX-Deck?
+
+---
+
+## MDX-based presentations
+
+---
+
+# What can it do?
+
+<Appear>
+<h2>📝 Write presentations in markdown</h2>
+<h2>⚛️ Import and use React components</h2>
+<h2>💅 Customizable themes and components</h2>
+<h2>0️⃣ Zero-config CLI</h2>
+<h2>💁 Presenter mode</h2>
+<h2>📓 Speaker notes</h2>
+</Appear>
+
+---
+
+export default Split
+
+# Alternative layouts?
+
+Sweet!
+
+---
+
+...but coolest of all..
+
+---
+
+import Counter from './components/Counter'
+
+### React Components inside Markdown
+
+<br />
+
+<Counter />
+
+---
+
+Any type of components!
+
+---
+
+import {
+  LiveProvider,
+  LiveEditor,
+  LiveError,
+  LivePreview
+} from 'react-live'
+
+### <a href="https://github.com/formidablelabs/react-live" target="_blank">react-live</a>
+
+<br />
+
+<LiveProvider code="<strong>Hello World!</strong>">
+  <LiveEditor />
+  <LiveError />
+  <br />
+  <LivePreview />
+</LiveProvider>
+
+---
+
+## In fact...
+
+This is an mdx-deck presentation.
+
